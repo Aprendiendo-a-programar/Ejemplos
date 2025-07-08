@@ -44,14 +44,14 @@ public class EjemploIntegracion {
         double gananciaTotalJornadaCompleta = 0.0;
         // lo que el teclado va a leer
         int tipoEstacionamiento = 0;
-        while (!matricula.equalsIgnoreCase("SALIR")) { //salir, SALIR
+        while (true) {
 
             System.out.println("Tipos de estacionamiento disponible: 1. Por hora 2. Media Jornada 3. Jornada completa ");
 
             System.out.println("Ingrese el numero de matrícula: ");
             matricula = teclado.nextLine();
 
-            if(matricula.equalsIgnoreCase("salir")){
+            if(matricula.equalsIgnoreCase("salir")){ //salir, SALIR
                 break;
             }
 
