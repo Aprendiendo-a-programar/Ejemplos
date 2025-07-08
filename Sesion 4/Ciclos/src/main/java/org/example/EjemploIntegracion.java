@@ -45,9 +45,6 @@ public class EjemploIntegracion {
         // lo que el teclado va a leer
         int tipoEstacionamiento = 0;
         while (true) {
-
-            System.out.println("Tipos de estacionamiento disponible: 1. Por hora 2. Media Jornada 3. Jornada completa ");
-
             System.out.println("Ingrese el numero de matrícula: ");
             matricula = teclado.nextLine();
 
@@ -55,6 +52,7 @@ public class EjemploIntegracion {
                 break;
             }
 
+            System.out.println("Tipos de estacionamiento disponible: 1. Por hora 2. Media Jornada 3. Jornada completa ");
             System.out.println("Ingrese el tipo de estacionamiento: ");
             tipoEstacionamiento = Integer.parseInt(teclado.nextLine());
             //teclado.nextLine();
