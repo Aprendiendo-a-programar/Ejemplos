@@ -50,7 +50,7 @@ public class Main {
          * palabras que sean ingresadas por teclado hasta que se ingrese la palabra "salir"..
          */
         Scanner lector = new Scanner(System.in);
-        //String respuesta = "";        
+        String respuesta = "";        
         /*
         while (true) {
             System.out.println("Dame una una palabra (salir par terminar) ");
@@ -60,17 +60,18 @@ public class Main {
             }
         }
         */
-        /* 
+        /*
         do {
             System.out.println("Dame una una palabra (salir par terminar) ");
             respuesta = lector.nextLine();
         } while (!respuesta.equals("salir"));
-        System.out.println("fin del programa");*/
-        /*
-        for (String respueta = ""; !respueta.equals("salir");) {
+        System.out.println("fin del programa");
+        */
+        
+        for (String respueta = ""; !respueta.equals("salir"); respueta = lector.nextLine()) {
             System.out.println("Dame una una palabra (salir par terminar) ");
         }
-        */
+        
         /*
         Realice un programa que pida dos números, después preguntará que operación
         se realizará con esos dos números, el programa terminará hasta que el usuario
