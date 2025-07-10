@@ -6,33 +6,49 @@ import java.util.Scanner;
 public class Ahorcado {
     // SCANNER
     public static Scanner scanner = new Scanner(System.in);
-    public static int VIDAS = 6;
     public static void main(String[] args) {
+        int vidas = 6;
         String palabraOculta = generarPalabraAleagoria();
 // Hola, h
         char[] asteriscos = llenarConAsteriscos(palabraOculta);
 
-        while (aunExisteAsteriscos(asteriscos) && VIDAS > 0){
+        while (aunExisteAsteriscos(asteriscos) && vidas > 0){
             System.out.println("Palabra oculta: ");
+            imprimirLosAsteriscos(asteriscos);
+            System.out.println("Tienes " + vidas + " de vidas. ");
             System.out.println("Ingrese una letra: ");
             String letra = scanner.nextLine();
-            // GATO, charAt(1) -> A
+            // GATA, charAt(1) -> A
             // G, charAt(0) -> G
             char letraExtraida = letra.charAt(0);
+            boolean letraAcertada = false;
+            // verificar si el usuario acerto con una letra
             for (int i = 0; i < palabraOculta.length(); i++) {
                 if(letraExtraida == palabraOculta.charAt(i)){
-                    // G a t a -> * * * *
-                    // G * * *
-                    asteriscos[i] = letraExtraida;
-                    System.out.println("Haz acertado ");
-                    imprimirLosAsteriscos(asteriscos);
-                    break;
-                }else {
-                    System.out.println("No haz acertado ");
-                    VIDAS--;
+                    letraAcertada = true;
                     break;
                 }
             }
+            // cambiar los asteriscos por la letra que coincide en la palabra oculta
+            // if(letraAcertada), if(letraAcertada == true)
+            if(letraAcertada){
+                System.out.println("Haz acertado con una letra. ");
+                for (int i = 0; i < palabraOculta.length(); i++) {
+                    if(letraExtraida == palabraOculta.charAt(i)){
+                        asteriscos[i] = letraExtraida;
+                    }
+                }
+            } else {
+                System.out.println("No acertas una letra. ");
+                vidas--;
+            }
+        }
+        if(vidas == 0){
+            System.out.println("No pudiste adivinar la palabra, lo sentimos, intente de nuevo!!!");
+            System.out.println("La palabra oculta era: " + palabraOculta);
+        }
+        if(!aunExisteAsteriscos(asteriscos)){
+            System.out.println("Felicidades haz adivinado la palabra: " + palabraOculta);
         }
 
     }

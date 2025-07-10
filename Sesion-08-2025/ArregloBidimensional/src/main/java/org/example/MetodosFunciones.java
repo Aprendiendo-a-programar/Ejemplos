@@ -3,6 +3,7 @@ package org.example;
 public class MetodosFunciones {
 
     public static void main(String[] args) {
+        System.out.println(obtenerNombre("Hello World!"));
     }
 
     // métodos / función, encapuslación de ciertas intrucciones
@@ -16,18 +17,18 @@ public class MetodosFunciones {
 
     // METODOS
     // metodo sin parametro
-    public static void miPrimerMetodoSinParametro(){
-        System.out.println("este es mi> miPrimerMetodoSinParametro");
+    public static void miPrimerMetodoSinParametro () {
+        System.out.println("este es mi> hola desde mi metodo");
     }
     // metodo con parametro
     // sintaxis de parametros> tipoDato nombreArgumento, ...
-    public static void metodoConParametros(int numero, String holaMundo){
+    public static void metodoConParametros(int numero, String holaMundo, int otroParametro){
         System.out.println(holaMundo);
     }
 
     // FUNCIONES
     public static int obtenerNumero(){
-        return 500;
+        return 1000;
     }
 
     public static String obtenerNombre(String nombre){
