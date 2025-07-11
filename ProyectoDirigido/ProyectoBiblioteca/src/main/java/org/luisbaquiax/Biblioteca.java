@@ -86,26 +86,6 @@ public class Biblioteca {
         this.libros[77] = new Libro("REF0078", "El eco del horizonte", "Víctor Mendoza", 3, 0);
         this.libros[78] = new Libro("REF0079", "Sombras del destino", "Carmen Ortiz", 8, 3);
         this.libros[79] = new Libro("REF0080", "El latido del silencio", "Pablo Romero", 5, 1);
-        this.libros[80] = new Libro("REF0081", "Ecos de la luna", "Lucía Fernández", 6, 2);
-        this.libros[81] = new Libro("REF0082", "El sendero de cristal", "Andrés Gil", 4, 0);
-        this.libros[82] = new Libro("REF0083", "Luz en el bosque", "Sonia Martínez", 7, 3);
-        this.libros[83] = new Libro("REF0084", "El murmullo del tiempo", "Jorge Vargas", 5, 1);
-        this.libros[84] = new Libro("REF0085", "Sombras y luz", "María Rojas", 6, 2);
-        this.libros[85] = new Libro("REF0086", "El canto de la noche", "Felipe Cruz", 3, 0);
-        this.libros[86] = new Libro("REF0087", "Ríos de cristal", "Clara Esteban", 8, 3);
-        this.libros[87] = new Libro("REF0088", "El alba de los sueños", "David Moreno", 5, 1);
-        this.libros[88] = new Libro("REF0089", "Hilos del amanecer", "Teresa Aguilar", 6, 2);
-        this.libros[89] = new Libro("REF0090", "El susurro de las sombras", "Ricardo Silva", 4, 0);
-        this.libros[90] = new Libro("REF0091", "Sombras del silencio", "Alicia Domínguez", 7, 3);
-        this.libros[91] = new Libro("REF0092", "El eco de la luz", "Óscar Núñez", 5, 1);
-        this.libros[92] = new Libro("REF0093", "Caminos de la luna", "Patricia Ramos", 6, 2);
-        this.libros[93] = new Libro("REF0094", "El reflejo del viento", "Manuel García", 3, 0);
-        this.libros[94] = new Libro("REF0095", "Sombras en el horizonte", "Beatriz Luna", 8, 3);
-        this.libros[95] = new Libro("REF0096", "El canto del silencio", "Eduardo Santos", 5, 1);
-        this.libros[96] = new Libro("REF0097", "Ríos de la noche", "Lorena Castillo", 6, 2);
-        this.libros[97] = new Libro("REF0098", "El umbral de cristal", "Gabriel Ortiz", 4, 0);
-        this.libros[98] = new Libro("REF0099", "Cenizas del tiempo", "Verónica Peña", 7, 3);
-        this.libros[99] = new Libro("REF0100", "El peso del horizonte", "Iván Torres", 5, 1);
     }
 
     public void agregarLibro(Libro libro) {
