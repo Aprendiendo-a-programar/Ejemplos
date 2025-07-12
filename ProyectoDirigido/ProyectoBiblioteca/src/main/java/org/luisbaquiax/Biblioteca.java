@@ -102,10 +102,12 @@ public class Biblioteca {
             if (this.libros[i] != null) {
                 if(this.libros[i].getReferencia().equals(referencia)){
                     this.libros[i] = null;
+                    System.out.println("Libro eliminado correctamente.");
                     break;
                 }
             }
         }
+        System.out.println("No se encontró el libro con la referencia: " + referencia);
     }
 
     public Libro obternerLibroPorTitulo(String titulo) {
