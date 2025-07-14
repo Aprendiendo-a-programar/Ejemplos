@@ -23,21 +23,16 @@ public class Ahorcado {
             char letraExtraida = letra.charAt(0);
             boolean letraAcertada = false;
             // verificar si el usuario acerto con una letra
+            // cambiar los asteriscos por la letra que coincide en la palabra oculta
             for (int i = 0; i < palabraOculta.length(); i++) {
                 if(letraExtraida == palabraOculta.charAt(i)){
                     letraAcertada = true;
-                    break;
+                    asteriscos[i] = letraExtraida;
                 }
             }
-            // cambiar los asteriscos por la letra que coincide en la palabra oculta
             // if(letraAcertada), if(letraAcertada == true)
             if(letraAcertada){
                 System.out.println("Haz acertado con una letra. ");
-                for (int i = 0; i < palabraOculta.length(); i++) {
-                    if(letraExtraida == palabraOculta.charAt(i)){
-                        asteriscos[i] = letraExtraida;
-                    }
-                }
             } else {
                 System.out.println("No acertas una letra. ");
                 vidas--;
